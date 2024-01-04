@@ -50,7 +50,7 @@ const page = () => {
                 <input type="text" name="" id="" placeholder="Enter your name"/>
                 <label htmlFor="">Email</label>
                 <input type="text" name="" id=""  placeholder="Enter your Email"/>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message">
+                <textarea name="" id="" cols={30} rows={10} placeholder="Enter your message">
 
                 </textarea>
                 <button type="submit">Send</button>
