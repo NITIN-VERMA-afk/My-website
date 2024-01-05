@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Form from "../components/Form"
 
 import { CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
@@ -12,9 +13,9 @@ const page = () => {
     <>
       <div className="grid-cols-2">
         <div className="flex-col ">
-            <h1 className="text-center">get in touch</h1>
-            
-           <p className="text-center">feel free to contact us </p> 
+          <h1 className="text-center">get in touch</h1>
+
+          <p className="text-center">feel free to contact us </p>
         </div>
         <div className=" flex-col">
           <h1>Feel free to contact me !</h1>
@@ -43,23 +44,10 @@ const page = () => {
             </ul>
           </div>
         </div>
-        <div className="flex-col ">
-            <form  className="" action="">
-               
-                <label htmlFor="">name</label>
-                <input type="text" name="" id="" placeholder="Enter your name"/>
-                <label htmlFor="">Email</label>
-                <input type="text" name="" id=""  placeholder="Enter your Email"/>
-                <textarea name="" id="" cols={30} rows={10} placeholder="Enter your message">
+        <div className="">
+          <Form/>
 
-                </textarea>
-                <button type="submit">Send</button>
-
-                
-                
-            </form>
-
-
+          
         </div>
       </div>
     </>
