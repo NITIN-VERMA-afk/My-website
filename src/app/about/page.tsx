@@ -24,28 +24,9 @@ const About = () => {
     color: theme.palette.text.secondary,
   }));
 
-  const iconBox = {
-    width: "40px",
-    height: "40px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    border: "1px solid #000",
-    borderRadius: "8px",
-    backgroundColor: "white",
-    color: "black",
-  };
+  
 
-  const AboutText = {
-    fontSize: "20px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "20%",
-    width: "60%",
-    margin: "3% 20% ",
-  };
+
  
   
   const Icons = [
@@ -58,83 +39,65 @@ const About = () => {
   ];
 
   return (
-    <div style={{ color: "white" }}>
+    <div>
       <Box className=" flex flex-col items-center  mt-2 justify-center">
-        <Box style={iconBox}>
+        <Box className="p-3 border-2 rounded-sm bg-white text-black">
           <InfoIcon />
         </Box>
         <Typography variant="h1">About me</Typography>
         <Typography variant="subtitle1">its a intro</Typography>
       </Box>
-      <Box style={AboutText}>
+      <Box className="mx-32 my-5" >
         <Typography variant="subtitle1">
         MERN stack enthusiast here! I specialize in crafting seamless web experiences with MongoDB, Express.js, React.js, and Node.js. From robust backend solutions to sleek frontend interfaces, Im passionate about turning ideas into high-quality code. Lets build something amazing together! 
         </Typography>
       </Box>
       
       
-      <Box sx={{ display: "flex", alignContent: "center",justifyContent:"space-around" }}>
-     
-        <Box
-        sm={{
-          display:"flex",
-          flexDirection:"row"
-        }}
-        xs={{
-          display:"flex",
-          flexDirection:"column",
-          
-        }}
-          sx={{
-            display: "flex",
-            flexDirection:"column",
-            listStyle: "none",
-           
-          }}
-        >
-          <Typography variant="h2">Personal Details</Typography>
-          <Box sx={{display:"flex"}}>
-          <ul style={{ listStyle: "none" }}>
-            <li>Phone no.</li>
-            <li>Email </li>
-            <li>address</li>
-            <li>website</li>
-            <li>job-status</li>
-          </ul>
-          <ul style={{ listStyle: "none" }}>
-            <li>9015308881</li>
-            <li>nitinvermanv61506@gmail.com</li>
-            <li>HP-24</li>
-            <li>www.nitinverma.com</li>
-            <li>Freelancer</li>
-          </ul>
+      <Box className="flex flex-col md:flex-row items-center justify-around">
+  <Box>
+    <Typography variant="h2">Personal Details</Typography>
+    <Box className="flex flex-col md:flex-row">
+      <ul className="list-none md:mr-8">
+        <li>Phone no.</li>
+        <li>Email</li>
+        <li>Address</li>
+        <li>Website</li>
+        <li>Job Status</li>
+      </ul>
+      <ul className="list-none">
+        <li>9015308881</li>
+        <li>nitinvermanv61506@gmail.com</li>
+        <li>HP-24</li>
+        <li>www.nitinverma.com</li>
+        <li>Freelancer</li>
+      </ul>
+    </Box>
+  </Box>
 
-          </Box>
-        
-        </Box>
+  <Box>
+    <Box sx={{ flexGrow: 1 }}>
+      <Typography variant="h2">My Interests</Typography>
+      <Grid
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
+        {Icons.map((icon, index) => (
+          <Grid item xs={2} sm={4} md={4} key={index}>
+            <Item sx={{ background: "", color: "" }}>
+              {icon.icons}
+              <br /> {icon.name}
+            </Item>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+  </Box>
+</Box>
 
-        <Box>
-          <Box sx={{ flexGrow: 1 }}>
-          <Typography variant="h2">My intrests</Typography>
-            <Grid
-              container
-              spacing={{ xs: 2, md: 3 }}
-              columns={{ xs: 4, sm: 8, md: 12 }}
-            >
-              
-            {Icons.map((icon, index) => (
-                <Grid item xs={2} sm={4} md={4} key={index}>
-                  <Item sx={{ background: "", color: "" }}>
-                  {icon.icons}<br/> {icon.name}
-                  </Item>
-                </Grid>
-              ))}
-            </Grid>
-          </Box>
-        </Box>
-      </Box>
-      <Box sx={{display:"flex",alignContent:"center",justifyContent:"center"}}>
-      <Button variant="contained">Dowenload Cv</Button>
+      <Box className="flex items-center justify-center">
+      <Button className="bg-blue-500 m-3" variant="contained">Dowenload Cv</Button>
       </Box>
     </div>
   );
