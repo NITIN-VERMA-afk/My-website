@@ -15,6 +15,7 @@ function Footer() {
         mt: "auto",
         backgroundColor: "rgb(147,51,234)",
         color: "white",
+        marginBottom:0
       }}
     >
       <Container className="flex items-center gap-7" maxWidth="xl">
