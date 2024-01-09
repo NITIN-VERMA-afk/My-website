@@ -1,9 +1,14 @@
 import React from 'react'
+import { Typography } from '@mui/material'
 
 const page = () => {
   return (
     <div>
-      <h1>want to work together</h1>
+      <Typography variant='h1'>want to work with me</Typography>
+      <Typography>contact me on below details</Typography>
+
+
+
     </div>
   )
 }
