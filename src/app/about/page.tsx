@@ -45,7 +45,7 @@ const About = () => {
           <InfoIcon />
         </Box>
         <Typography variant="h1">About me</Typography>
-        <Typography variant="subtitle1">its a intro</Typography>
+        <Typography variant="subtitle1">intro</Typography>
       </Box>
       <Box className="mx-32 my-5" >
         <Typography variant="subtitle1">
