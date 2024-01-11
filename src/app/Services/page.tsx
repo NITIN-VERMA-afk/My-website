@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Services = () => {
   return (
-    <div>
+    <div className="m-8">
       <Typography style={{ textAlign: "center", color: "white" }} variant="h1">
         services we provide
       </Typography>

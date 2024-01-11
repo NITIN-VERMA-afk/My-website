@@ -58,7 +58,7 @@ const Item = styled(Paper)(({ theme }):any => ({
 
 export default function Projects() {
   return (
-    <Box sx={{ flexGrow: 1, marginTop: "30px" }}>
+    <Box className="m-24" sx={{ flexGrow: 1, marginTop: "30px" }}>
       <Grid container spacing={2}>
         {projects.map((project, index) => (
           <Grid item xs={3} key={index}>
