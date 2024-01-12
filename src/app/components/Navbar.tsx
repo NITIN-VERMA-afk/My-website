@@ -17,7 +17,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
 import Link from "next/link";
 
-const pages = [ "about","Workwithme", "Blog","contact","projects","Services","courses"];
+const pages = [ "about","Workwithme", "Blog","contact","projects","Services","courses","resume"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Navbar() {
