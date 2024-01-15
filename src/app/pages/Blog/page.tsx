@@ -8,7 +8,7 @@ const Blog = () => {
   
   const blogPosts = [
     {
-      title: 'Web 1.o',
+      title: 'Web 1.0',
       content: 'The first version of the web, often referred to as Web 1.0, was primarily static and focused on information retrieval.Websites were largely read-only, and users were mainly consumers of content.The early stages of online commerce emerged during Web 1.0, with the establishment of basic e-commerce websites for selling products and services',
     },
     {
@@ -24,17 +24,19 @@ const Blog = () => {
   ];
 
   return (
-    <Container className="m-5">
+    <Container className="m-16">
       <Head>
         <title>my blog Blog</title>
       </Head>
       <Typography variant="h2" component="h1" align="center" gutterBottom>
         Welcome to my Blog
       </Typography>
-      <Grid container spacing={3}>
+      <Typography variant='h3'>Todays topic is web3</Typography>
+      <Typography variant='h6'>generations of web3</Typography>
+      <Grid container spacing={6}>
         {blogPosts.map((post, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
-            <Card>
+            <Card className='rounded drop-shadow-sm'>
               <CardContent>
                 <Typography variant="h5" component="div" gutterBottom>
                   {post.title}

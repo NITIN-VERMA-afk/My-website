@@ -121,10 +121,10 @@ const Resume: React.FC = () => {
               <ListItemText primary="Email:nitinvermanv61506@gmail.com" />
             </ListItem>
             <ListItem>
-              <ListItemText primary="LinkedIn: " />
+              <ListItemText primary="LinkedIn: https://www.linkedin.com/in/nitin-verma-7978b51b8/"/>
             </ListItem>
             <ListItem>
-              <ListItemText primary="GitHub: " />
+              <ListItemText primary="GitHub: https://github.com/NITIN-VERMA-afk" />
             </ListItem>
           </List>
         </section>

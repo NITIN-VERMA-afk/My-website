@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Form from "../components/Form"
+import Form from "../../components/Form"
 
 import { CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";

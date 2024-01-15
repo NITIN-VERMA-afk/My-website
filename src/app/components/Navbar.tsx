@@ -12,13 +12,21 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-
-
 import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
 import Link from "next/link";
+import Image from "next/image"
 
-const pages = [ "about","Workwithme", "Blog","contact","projects","Services","Courses","resume"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = [
+  "about",
+  "Workwithme",
+  "Blog",
+  "contact",
+  "projects",
+  "Services",
+  "Courses",
+  "resume",
+];
+const settings = ["profile", "Dashboard", "Logout"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -65,7 +73,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            NITIN VERMA
+            <Link href="/"> NITIN VERMA</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -132,8 +140,7 @@ function Navbar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <Link href={page === "Home" ? "/" : `/${page}`}>{page} </Link>
-                
+                <Link href={page === "Home" ? "/" : `/pages/${page}`}>{page} </Link>
               </Button>
             ))}
           </Box>
@@ -143,7 +150,7 @@ function Navbar() {
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt="NITIN VERMA"
-                  src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+                  src="https://i.pinimg.com/236x/37/f4/03/37f4034a0ecd49db145e5ef69db79fa1.jpg"
                 />
               </IconButton>
             </Tooltip>
@@ -165,7 +172,12 @@ function Navbar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign="center">
+                  
+                    <Link href={setting === "Home" ? "/" : `/pages/${setting}`}>
+                      {setting}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>

@@ -27,7 +27,7 @@ function Footer() {
         <Box className="flex align-middle items-center gap-5">
           <Avatar
             alt="NITIN VERMA"
-            src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+            src="https://i.pinimg.com/236x/37/f4/03/37f4034a0ecd49db145e5ef69db79fa1.jpg"
           />
 
           <Typography variant="body2" align="center">

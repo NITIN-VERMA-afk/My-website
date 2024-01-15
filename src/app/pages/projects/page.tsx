@@ -6,7 +6,7 @@ import Paper from "@mui/material/Paper";
 import Grid from '@mui/material/Grid';
 
 
-import GitProjectCard from "../components/GridprojectCard";
+import GitProjectCard from "../../components/GridprojectCard";
 
 
 const projects = [
