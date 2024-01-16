@@ -73,7 +73,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            <Link href="/"> NITIN VERMA</Link>
+            <Link href="/"> NITINVERMA</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -149,7 +149,7 @@ function Navbar() {
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
-                  alt="NITIN VERMA"
+                  alt="NITINVERMA"
                   src="https://i.pinimg.com/236x/37/f4/03/37f4034a0ecd49db145e5ef69db79fa1.jpg"
                 />
               </IconButton>

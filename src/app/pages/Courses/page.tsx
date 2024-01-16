@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import Image from 'next/image'
 
-import Head from "next/head";
+
 import {
   Container,
   Typography,
@@ -15,15 +16,20 @@ const courses = [
   {
     title: "MERN Stack Development",
     description: "Learn the MERN stack for web development.",
+    img:"/images/Mern.png",
+    
   },
   {
     title: "DevOps",
     description: "Master the principles of DevOps and CI/CD.",
+    img:"/images/dev ops.jpg",
   },
   {
     title: "Machine Learning",
     description: "Explore the world of Machine Learning and AI.",
+    img:"/images/machinelearning.webp",
   },
+
 ];
 
 const Courses = (): any => {
@@ -35,9 +41,7 @@ const Courses = (): any => {
   return (
     <>
       <Container>
-        <Head>
-          <title>My Website - Courses</title>
-        </Head>
+     
         <Typography variant="h2" gutterBottom>
           Courses
         </Typography>
@@ -48,6 +52,9 @@ const Courses = (): any => {
                 <Typography variant="h5" component="div" gutterBottom>
                   {course.title}
                 </Typography>
+             
+
+                <Image src={course.img} width={500} height={500} alt={course.title}/>
 
                 <Typography variant="body2" color="text.secondary">
                   {course.description}

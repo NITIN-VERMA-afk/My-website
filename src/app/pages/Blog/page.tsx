@@ -1,8 +1,13 @@
 
 
 import React from 'react';
-import Head from 'next/head';
+
+import { Metadata } from 'next';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
+
+export const metadata:Metadata={
+  title:"blog",
+}
 
 const Blog = () => {
   
@@ -25,9 +30,7 @@ const Blog = () => {
 
   return (
     <Container className="m-16">
-      <Head>
-        <title>my blog Blog</title>
-      </Head>
+    
       <Typography variant="h2" component="h1" align="center" gutterBottom>
         Welcome to my Blog
       </Typography>
