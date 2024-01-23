@@ -52,7 +52,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar className="bg-purple-600" position="static">
+    <AppBar className="bg-purple-600" position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AllInclusiveIcon

@@ -41,12 +41,12 @@ function Footer() {
 
         <Box className="flex align-middle items-center gap-5">
           <Typography variant="body2">
-            {" "}
-            <Link href="/disclamer">disclamer</Link>{" "}
+           
+            <Link href="/pages/disclamer">disclamer</Link>
           </Typography>
           <Typography variant="body2">
-            {" "}
-            <Link href="/privacyPolicy"> PrivacyPolicy</Link>{" "}
+            
+            <Link href="/pages/privacyPolicy"> PrivacyPolicy</Link>
           </Typography>
         </Box>
       </Container>

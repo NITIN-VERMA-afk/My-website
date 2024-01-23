@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Form from "../../components/Form"
+// import Form from "../../components/Form"
+// import {Loginform} from "../../components/Loginform"
 
 import { CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
@@ -45,7 +46,7 @@ const page = () => {
           </div>
         </div>
         <div className="">
-          <Form/>
+          {/* <Loginform/> */}
 
           
         </div>

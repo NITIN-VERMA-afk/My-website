@@ -1,11 +1,12 @@
 import React from 'react'
 import { Typography,Container,Button } from '@mui/material'
+import Link from "next/link";
 
 const page = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center mt-auto'>
       <Typography variant='h1'>want to work with me</Typography>
-      <Typography>contact me on below details</Typography>
+      
       <div>
       <Container maxWidth="md">
       <Typography variant="h4">
@@ -19,7 +20,7 @@ const page = () => {
         If you have a project in mind, feel free to get in touch with me. Lets discuss your requirements and how I can assist you.
       </Typography>
       <Button variant="contained" color="primary">
-        Contact Me
+        <Link href="contact">Contact Me </Link> 
       </Button>
     </Container>
       </div>
