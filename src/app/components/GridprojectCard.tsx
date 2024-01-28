@@ -2,13 +2,14 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import Image from   "next/image"
 
 const GitProjectCard = ({ project }) => {
   return (
     <Card>
       <CardContent>
         <Typography variant="h6">{project.name}</Typography>
-        <img  src={project.img} alt="" height={"300px"}  />
+        <Image  src={project.img} alt="project img" height={"300px"}  />
         <Typography variant="body2">{project.description}</Typography>
         <Typography variant="body2">Language: {project.language}</Typography>
         <Typography variant="body2">

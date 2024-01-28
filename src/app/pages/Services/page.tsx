@@ -21,9 +21,9 @@ const Services = () => {
         services we provide
       </Typography>
 
-      <Box sx={{ width: "100%" }}>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={12}>
+      <Box>
+        <Grid>
+          <Grid item xs={12} sm={6} md={4} lg={3} >
             <Item
               sx={{
                 display: "flex",

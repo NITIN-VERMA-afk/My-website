@@ -61,7 +61,7 @@ export default function Projects() {
     <Box className="m-24" sx={{ flexGrow: 1, marginTop: "auto" }}>
       <Grid container spacing={2}>
         {projects.map((project, index) => (
-          <Grid item xs={3} key={index}>
+          <Grid item xs={12} sm={6} md={4} lg={3}  key={index}>
             <GitProjectCard project={project} />
           </Grid>
         ))}

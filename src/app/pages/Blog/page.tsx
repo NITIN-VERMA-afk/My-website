@@ -31,14 +31,14 @@ const Blog = () => {
   return (
     <Container className="m-16">
     
-      <Typography variant="h2" component="h1" align="center" gutterBottom>
+      <Typography  variant="h3" component="h1" align="center" gutterBottom>
         Welcome to my Blog
       </Typography>
       <Typography variant='h3'>Todays topic is web3</Typography>
       <Typography variant='h6'>generations of web3</Typography>
       <Grid container spacing={6}>
         {blogPosts.map((post, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4}>
+          <Grid item key={index} xs={9} sm={6} md={4}>
             <Card className='rounded drop-shadow-sm'>
               <CardContent>
                 <Typography variant="h5" component="div" gutterBottom>

@@ -41,7 +41,7 @@ export default function ServiceCard() {
   return (
     <>
       {Servicedata.map((service, index) => (
-        <Card key={index} sx={{ maxWidth: 345 }}>
+        <Card key={index} sx={{ Width: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
             image={service.img}
