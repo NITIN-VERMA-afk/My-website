@@ -1,41 +1,76 @@
-"use client"
-import { Container,TextField,Box,Button,Typography } from "@mui/material"
-import AddLocationIcon from '@mui/icons-material/AddLocation';
-import EmailIcon from '@mui/icons-material/Email';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import {
+  Container,
+  TextField,
+  Box,
+  Button,
+  Typography,
+  Grid,
+} from "@mui/material";
+import AddLocationIcon from "@mui/icons-material/AddLocation";
+import EmailIcon from "@mui/icons-material/Email";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 
 const Contactpage = () => {
   return (
-    <>
-    <Container sx={{display:'flex'}}>
-      <Box sx={{display:"flex",flexDirection:"column", backgroundColor:"#FBF6EE",width:"500px",padding:"20px",gap:"10px"}}>
-      <TextField helperText="plz enter your name" label="name" variant="standard"   />
-      <TextField helperText="plz enter your email" label="email" variant="standard"   />
-      <TextField
-          id="outlined-multiline-static"
-          label="message"
-          multiline
-          rows={4}
-          defaultValue="Enter your text here"
-        />
-      <Button  size="small"variant="contained" color="error">send</Button>
-      
+    <Grid container spacing={2}>
+      <Grid item xs={12} md={6}>
+        <Box>
+          <form action="post">
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                background: "#9333EA",
+                width: "600",
+                paddingLeft: "30",
+              }}
+            >
+              <TextField
+                id="filled-basic-name"
+                label="Your name"
+                variant="filled"
+              />
+              <TextField
+                id="filled-basic-email"
+                label="Your email"
+                variant="filled"
+              />
+              <TextField
+                id="filled-basic-thoughts"
+                label="Share your thoughts"
+                variant="filled"
+              />
+              <Button sx={{ color: "white" }} type="submit">
+                Share your thoughts
+              </Button>
+            </Box>
+          </form>
+        </Box>
+      </Grid>
 
-      </Box>
-      <Box sx={{display:"flex",justifyContent:"center",alignContent:"center",flexDirection:"column",backgroundColor:"tomato",gap:"6px"}}>
-        <Typography variant="h1" >Contact us</Typography>
-        <Typography variant="h6"><AddLocationIcon/>  32,d5,laptanager</Typography>
-        <Typography variant="h6"> <EmailIcon/> nitinvermanv61506@gmail.com</Typography>
-        <Typography variant="h6"> <PhoneAndroidIcon/>  0987654321</Typography>
-        <Typography variant="h6" > <LocalPhoneIcon/> 54678</Typography>
-      </Box>
-   
+      <Grid item xs={12} md={6}>
+        <Box>
+          <Button
+            sx={{ backgroundColor: "#9333EA", padding: "12", color: "white" }}
+          >
+            Contact Us
+          </Button>
+          <Typography>
+            i cherish every opportunity to connect with
+            our visitors. Whether you have a question, an idea to share, or
+            simply want to say hello, were all ears! Your feedback fuels our
+            journey towards excellence, and were here to make your experience
+            as seamless as possible. Feel free to reach out to us through the
+            form below. We promise to respond promptly and with the utmost care.
+            Your message is important to us, and were eager to hear from you.
+            Lets embark on this journey together. Drop us a line, and lets
+            create something remarkable!
+          </Typography>
+        </Box>
+      </Grid>
+    </Grid>
+  );
+};
 
-    </Container>
-      
-    </>
-  )
-}
-
-export default Contactpage
+export default Contactpage;

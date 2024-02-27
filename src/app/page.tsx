@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex h-screen bg-cover  flex-col items-start justify-between pl-24" style={{backgroundImage: 'url("/images/background.jpg")'}}>
       <div className="grid items-center mt-4" 
          style={{ backgroundImage: "url('../images/bg.jpg')", height: '100vh', backgroundRepeat: 'no-repeat',backgroundSize:"cover" }}>
-            <h1 className="text-5xl pt-28 text-gray-900 dark:text-white mt-0">hi`i m   </h1>
+            <h1 className="text-5xl pt-28 text-gray-900 dark:text-white mt-0">hi i m   </h1>
             <h2 className='text-6xl text-gray-900 dark:text-white'>Nitin verma</h2>
 
               <p className="text-4xl text-gray-900 dark:text-white ">i m a full stack develper </p>

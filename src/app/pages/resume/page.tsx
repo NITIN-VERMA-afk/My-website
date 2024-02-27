@@ -12,7 +12,7 @@ import {
 
 const Resume: React.FC = () => {
   return (
-    <Container maxWidth="md" sx={{ marginTop: 4 }}>
+    <Container maxWidth="md" sx={{ marginTop: 12}}>
       <Paper elevation={3} sx={{ padding: 3 }}>
         <Typography variant="h4" sx={{ marginBottom: 2 }}>
           NITIN VERMA

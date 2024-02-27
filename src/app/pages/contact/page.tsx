@@ -25,8 +25,11 @@ const page = () => {
             want to know something or you have any suggestion then please mail
             me. Thank You.
           </p>
-          <div>
-            <ul className="list-none flex gap-3">
+          <div className="mt-32">
+          <Contact />
+        </div>
+          <div style={{marginTop:'40px'}}>
+            <ul className="list-none flex gap-3 justify-center">
               <li className="p-3 bg-purple-600 rounded">
                 <CiLinkedin />
               </li>
@@ -45,9 +48,7 @@ const page = () => {
             </ul>
           </div>
         </div>
-        <div className="">
-          <Contact />
-        </div>
+       
       </div>
     </>
   );
